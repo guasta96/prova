@@ -1,0 +1,470 @@
+#ContAll{
+   font-family:helvetica neue;
+   width:610px;
+   height:730px;
+    		z-index:0;
+    		position:relative;
+    		display:flex;
+    		justify-content:center;
+    		overflow:hidden;
+}
+#sfondoSpotify{
+    	width:400px;
+    	height: 730px;
+    	position:absolute;
+    	z-index:2;
+    	
+        background: linear-gradient(to bottom,#9D1616,#131313);/* #006cb7  */
+	   
+	    transition: all 2s ;
+	    -webkit-transition: all 2s ;
+	    -o-transition: all 2s ;
+	    -moz-transition: all 2s ;
+	  
+}
+.titolo{
+font-size: 20px;
+text-transform: uppercase;
+  font-weight: normal;
+  font-weight: bold;
+  color: white;
+    text-align:center;
+    font-family:verdana; /* il font utilizzato nel titolo del box */
+    
+  }
+	#strutturaTab{
+		width:100%;
+		height:100%;
+		position:absolute;
+		margin-top:10px;
+	}
+	   	input.icon,input.stepF,input.stepB{
+            display: none;
+        }
+		.ContBottone{
+			margin:3px 10px 0px 10px;
+			float:left;
+		}
+		i {
+		  font-size:13px;
+            color: #eaeff3; /* Cambia colore dell'icona */
+			cursor: pointer;
+        }
+		i:hover{
+			color: black;
+		}
+        
+        .stepFB,.stepBB{display:none;}
+        
+        #stepFB1,#stepBB1{display:block;}
+        
+        .divPlay{
+            background-color:#ffffff; 
+            border-radius:20px; 
+            padding-top:8px; 
+            padding-bottom:6px; 
+            text-align:center;
+        }
+        .divPlay>i{
+              color:#000; 
+              font-size:17px;
+        }
+       .play{
+           display:none;
+       }
+        
+        #play1{
+            display:block;
+        }
+        
+		#Copertina{
+			width:350px;
+			height:350px; 
+			/*background: black; url(); */
+			background-size:cover; 
+			-webkit-filter:drop-shadow(1px 1px 8px #000) grayscale(0.3);
+			
+			transition: all 2s ;
+	   		-webkit-transition: all 2s ;
+	   		-o-transition: all 2s ;
+	   		-moz-transition: all 2s ;
+			/*z-index:2;*/
+		}
+		.immagine{
+			width:350px;
+			height:350px;
+			
+			transition: all 2s ;
+	   		-webkit-transition: all 2s ;
+	   		-o-transition: all 2s ;
+	   		-moz-transition: all 2s ;
+            display:none;
+		}
+        
+        #immagine1{
+           display:block;
+        }
+        
+        .infoSong{
+             padding:10px 20px 10px 20px; 
+             text-align:center; 
+             font-family:montserrat;
+             display:none;
+        }
+        
+        #song1{
+             display:block;
+        }
+        
+        .titleSong{
+            font-size:11px; 
+            color:#f6f6f6; 
+            letter-spacing:0.8px; 
+            line-height:15px
+        }
+        
+        .artistSong{
+            font-size:8px; 
+            color:rgba(191, 193, 192, 0.72); 
+            letter-spacing:1px
+        }
+        
+        #retro::-webkit-scrollbar{display: none;}
+		#retro{
+			   width: 300px;
+			   height: 650px;
+			   position:absolute;
+			   overflow-y:auto;
+               
+               padding:25px;
+			   /*display:none;*/
+			   z-index:1;
+			   background: linear-gradient(to bottom, #4D5256, #050505);
+			   opacity:0;
+			   /*margin-left:45px;*/
+			   
+			   transition: all 2s ;
+	   		   -webkit-transition: all 2s ;
+	   		   -o-transition: all 2s ;
+	   		   -moz-transition: all 2s ;
+			   
+		}
+		#lato::-webkit-scrollbar{display: none;}
+		#lato{
+			 width: 0px; 
+			 height: 700px;
+			 position:absolute;
+			 overflow:scroll;
+			 z-index:3;
+			 right:0px;
+			 background: linear-gradient(to bottom, #4D5256, #050505);
+             color:white;
+			 /*opacity:0;*/
+			 
+			 transition: all 2s ;
+	   		 -webkit-transition: all 2s ;
+	   		 -o-transition: all 2s ;
+	   		 -moz-transition: all 2s ;
+		}
+        .tabella {/*vale per tutte le tabelle delle sezioni nascoste*/
+            margin:10px;
+            color:white;
+        }
+        #lato>table{
+             width:330px;
+        }
+        #lato>table tr:nth-of-type(3) > td > ul > li{
+           line-height:50px;
+        }
+        
+        #affetti::-webkit-scrollbar{display: none;}
+		#affetti{
+	/*margin:20px;
+	padding:30px;*/
+	width:0px;
+	height: 0px;
+	position:absolute;
+	z-index:4;/*
+	display:flex;
+		justify-content:center;*/
+	   background: linear-gradient(to bottom, #DA0000, #050505);/*red;*/
+       /*border-radius: 100%;*/
+	   opacity:0;
+	   top:700px;
+	   left:50px;
+	   
+	   overflow:scroll;
+	   
+	   transition: all 2s ;
+	   -webkit-transition: all 2s ;
+	   -o-transition: all 2s ;
+	   -moz-transition: all 2s ;
+	   
+	  
+	}
+    #affetti>table{
+       width:380px;    
+    }
+    a.persone{
+        color:white;
+        font-weight: bold; 
+    }
+    a.persone:hover{
+        color: black;
+    }
+    
+    
+	#bollini{
+			width:0px;
+	height: 0px;
+	position:absolute;
+	z-index:4; 
+	
+	background: linear-gradient(to bottom, #000090, #050505);
+       /*border-radius: 0%;*/
+	   opacity:0;
+	   top:700px;
+	   right:50px;
+	   
+	   overflow:hidden;
+	   
+	   transition: all 2s ;
+	   -webkit-transition: all 2s ;
+	   -o-transition: all 2s ;
+	   -moz-transition: all 2s ;
+	}
+		#riproduzione{
+			width:100%;
+		}
+		#BottoniRiproduzione{
+			width:100%;
+			padding-top:5px;
+		}
+        
+		#icon1:checked  ~ #ContAll>#sfondoSpotify{
+			transform: translateY(450px);
+			height:260px;
+		}
+		#icon1:checked ~ #ContAll>#retro{
+			display:block;
+			opacity:1;
+			color:white;
+		}
+		#icon1:checked  ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(2) > td  > #Copertina{
+			width: 70px;
+			height:70px;
+		}
+		#icon1:checked  ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(2) > td  > #Copertina> .immagine{
+			width: 70px;
+			height:70px;
+		}
+        
+        
+		#icon2:checked  ~ #ContAll>#sfondoSpotify{
+			transform: translateY(0px);
+			height:730px;
+		}
+		#icon2:checked  ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(2) > td  > #Copertina{
+			width: 350px;
+			height:350px;
+		}
+		#icon2:checked  ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(2) > td  > #Copertina> .immagine{
+			width: 350px;
+			height:350px;
+		}
+		#icon2:checked ~ #ContAll>#retro{
+			opacity:0;
+		}
+        
+        
+		#icon3:checked ~ #ContAll>#lato{
+			width:350px;
+		}
+        
+        
+		#icon4:checked ~ #ContAll>#affetti{
+			top:0px;
+			left:0px;
+      		   width:400px;
+			   height:730px;
+			   opacity:1;
+		}
+        #icon4:checked ~ #ContAll>#affetti> table tr:n:nth-of-type(2) > td  > img{
+            width:200px;
+        }
+        
+        
+		#icon5:checked ~ #ContAll>#bollini{
+			top:0px;
+	   		right:0px;
+		    width:400px;
+			height:730px;
+			opacity:1;
+		}
+        
+        
+		#icon6:checked ~ #ContAll>#affetti{
+			width:0px;
+            height: 0px;
+	        top:700px;
+	        left:50px;
+	        opacity:0px;
+		}
+        #icon6:checked ~ #ContAll>#affetti> table tr:n:nth-of-type(2) > td  > img{
+            width:0px;
+        }
+        
+        
+		#icon7:checked ~ #ContAll>#bollini{
+			top:700px;
+	   		right:50px;
+			width:0px;
+			height:0px;
+			opacity:0;
+		}
+		
+		/*avanti 1*/
+		 #stepF1:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(2) > td  > #Copertina> #immagine1 {
+		 	display:none;
+		 }
+		 #stepF1:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(2) > td  > #Copertina> #immagine2{
+		 	display:block;
+		 }
+		 #stepF1:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(4)> div >#stepFB1{
+		 	display:none;
+		 }
+		 #stepF1:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(2)> div >#stepBB1{
+		 	display:none;
+		 }
+		 #stepF1:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(4)> div >#stepFB2{
+		 	display:block;
+		 }
+		 #stepF1:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(2)> div >#stepBB2{
+		 	display:block;
+		 }
+         #stepF1:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(3) > td  > #song1 {
+		 	display:none;
+		 }
+         #stepF1:checked ~ #ContAll> #sfondoSpotify > table tr:nth-of-type(3) > td  > #song2 {
+		 	display:block;
+		 }
+         #stepF1:checked ~ #ContAll> #sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(3)> #play1 {
+		 	display:none;
+		 }
+         #stepF1:checked ~ #ContAll> #sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(3)> #play2 {
+		 	display:block;
+		 }
+         
+		 /*avanti 2*/
+		 #stepF2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(4)> div >#stepFB1{
+		 	display:none;
+		 }
+		 #stepF2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(2)> div >#stepBB1{
+		 	display:none;
+		 }
+		 #stepF2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(2) > td  > #Copertina> #immagine1,#immagine2 {
+		 	display:none;
+		 }
+		 #stepF2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(2) > td  > #Copertina> #immagine3{
+		 	display:block;
+		 }
+		 #stepF2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(4)> div >#stepFB2{
+		 	display:none;
+		 }
+		 #stepF2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(2)> div >#stepBB2{
+		 	display:none;
+		 }
+		 #stepF2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(4)> div >#stepFB3{
+		 	display:block;
+		 }
+		 #stepF2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(2)> div >#stepBB3{
+		 	display:block;
+		 }
+         #stepF2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(3) > td  > #song1,#song2 {
+		 	display:none;
+		 }
+         #stepF2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(3) > td  > #song3 {
+		 	display:block;
+		 }
+         #stepF2:checked ~ #ContAll> #sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(3)> #play1,#play2 {
+		 	display:none;
+         }
+         #stepF2:checked ~ #ContAll> #sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(3)> #play3 {
+		 	display:block;
+		 }
+		 
+		 /*indietro 2*/
+		 #stepB2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(4)> div >#stepFB1{
+		 	display:block;
+		 }
+		 #stepB2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(2)> div >#stepBB1{
+		 	display:block;
+		 }
+		 #stepB2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(2) > td  > #Copertina> #immagine1 {
+		 	display:block;
+		 }
+		 #stepB2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(2) > td  > #Copertina> #immagine2,#immagine3 {
+		 	display:none;
+		 }
+		 #stepB2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(4)> div >#stepFB2{
+		 	display:none;
+		 }
+		 #stepB2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(2)> div >#stepBB2{
+		 	display:none;
+		 }
+		 #stepB2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(4)> div >#stepFB3{
+		 	display:none;
+		 }
+		 #stepB2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(2)> div >#stepBB3{
+		 	display:none;
+		 }
+          #stepB2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(3) > td  > #song1 {
+		 	display:block;
+		 }
+         #stepB2:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(3) > td  > #song2,#song3 {
+		 	display:none;
+		 }
+         #stepB2:checked ~ #ContAll> #sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(3)> #play1 {
+		 	display:block;
+		 }
+         #stepB2:checked ~ #ContAll> #sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(3)> #play2,#play3 {
+		 	display:none;
+		 }
+		 
+		 /*indietro 3*/
+		 #stepB3:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(4)> div >#stepFB1{
+		 	display:none;
+		 }
+		 #stepB3:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(2)> div >#stepBB1{
+		 	display:none;
+		 }
+		 #stepB3:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(2) > td  > #Copertina> #immagine2 {
+		 	display:block;
+		 }
+		 #stepB3:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(2) > td  > #Copertina> #immagine1,#immagine3{
+		 	display:none;
+		 }
+		 #stepB3:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(4)> div >#stepFB2{
+		 	display:block;
+		 }
+		 #stepB3:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(2)> div >#stepBB2{
+		 	display:block;
+		 }
+		 #stepB3:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(4)> div >#stepFB3{
+		 	display:none;
+		 }
+		 #stepB3:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(2)> div >#stepBB3{
+		 	display:none;
+		 }
+         #stepB3:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(3) > td  > #song2 {
+		 	display:block;
+		 }
+         #stepB3:checked ~ #ContAll>#sfondoSpotify > table tr:nth-of-type(3) > td  > #song1,#song3 {
+		 	display:none;
+		 }
+          #stepB3:checked ~ #ContAll> #sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(3)> #play2 {
+		 	display:block;
+		 }
+         #stepB3:checked ~ #ContAll> #sfondoSpotify > table tr:nth-of-type(5) > td  > table  tr > td:nth-of-type(3)> #play1,#play3 {
+		 	display:none;
+		 }
